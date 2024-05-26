@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+
+
+@font-face {
+    font-family: 'TestSohne';
+    src: url(TestSohne-Halbfett-BF663d89cd2d67b.otf);
+}
+
+
+body, html {
+    font-family: 'TestSohne';
+    color: white;
+
+}
+
+
+.header-wrap {
+    height: 30vh;
+    position: relative;
+}
+
+.header {
+    top: 0;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+/* buttons */
+.headbuttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .headbuttons button {
+    color: white;
+    font-family: 'TestSohne';
+    border: solid 1px white;
+    padding: 5px 10px;
+    border-radius: 10px; /* This makes the button rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 5px}
+  
+  .headbuttons button:hover {
+    background-color: white;
+    color: black;
+  }
+
+.container {
+    text-align: center;
+    width: 100%; /* Optional: if you want the text to wrap within the viewport width */
+    box-sizing: border-box;
+    animation: fadeIn 4s;
+}
+
+h1 {
+    
+    font-family: 'TestSohne';
+    letter-spacing: -7px;
+    font-size: clamp(3rem, 11vw, 17rem);  /* Responsive font size */
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  /* for smaller screens below 700px */
+  @media only screen and (max-width: 700px) {
+    body {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /*for smaller screens below 300px*/
+  @media only screen and (max-width: 300px) {
+    body {
+      font-size: 1.6rem;
+    }
+  }
+
